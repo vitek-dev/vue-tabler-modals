@@ -12,6 +12,8 @@
 npm install @vitekdev/vue-tabler-modals
 ```
 
+Don't forgot to import styles: `node_modules/@vitekdev/vue-tabler-modals/dist/style.css`
+
 ## Dependencies
 
 - [Vue 3](https://vuejs.org/)

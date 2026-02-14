@@ -1,0 +1,13 @@
+node_modules
+dist
+dist-playground
+.DS_Store
+*.log
+.idea
+.vscode
+*.local
+.env
+.env.local
+coverage
+*.tgz
+playground/.vite

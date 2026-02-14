@@ -1,0 +1,9 @@
+.github
+src
+node_modules
+.DS_Store
+*.log
+.idea
+.vscode
+tsconfig.json
+vite.config.ts

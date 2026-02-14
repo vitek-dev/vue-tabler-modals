@@ -1,0 +1,68 @@
+{
+  "name": "@vitekdev/vue-tabler-modals",
+  "version": "0.0.0",
+  "description": "Vue 3 confirm modal component",
+  "author": {
+    "name": "Daniel Vitek",
+    "email": "daniel@vitek.dev"
+  },
+  "repository": {
+    "url": "git+https://github.com/vitek-dev/vue-tabler-modals.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/vue-tabler-modals.umd.js",
+  "module": "./dist/vue-tabler-modals.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-tabler-modals.es.js",
+      "require": "./dist/vue-tabler-modals.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly --outDir dist",
+    "build:playground": "vite build --mode playground --config vite.config.playground.ts",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.ts,.js",
+    "lint:fix": "eslint . --ext .vue,.ts,.js --fix",
+    "format": "prettier --check \"**/*.{vue,ts,js,json}\"",
+    "format:fix": "prettier --write \"**/*.{vue,ts,js,json}\""
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "modal",
+    "confirm",
+    "dialog",
+    "pinia",
+    "component"
+  ],
+  "peerDependencies": {
+    "@tabler/icons-vue": "^3.0.0",
+    "pinia": "^3.0.4",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@tabler/icons-vue": "^3.0.0",
+    "@types/node": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.55.0",
+    "@typescript-eslint/parser": "^8.55.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.8.0",
+    "pinia": "^3.0.4",
+    "prettier": "^3.8.1",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vue": "^3.0.0",
+    "vue-eslint-parser": "^10.4.0",
+    "vue-tsc": "^2.0.0"
+  }
+}
